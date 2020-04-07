@@ -26,7 +26,7 @@ public class MyMap {
     }
 
     public List<Integer> sortFromBig() {
-        throw new NotImplementedException();
+        return array.stream().sorted((a, b) -> Integer.compare(b, a)).collect(Collectors.toList());
     }
 
     public List<Integer> sortFromSmall() {
